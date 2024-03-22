@@ -21,10 +21,10 @@ from aiogram import F
 from datetime import timedelta
 from aiogram.client.default import DefaultBotProperties
 
-BOT_TOKEN = '5518716450:AAH-2v-qOrseYSvOnMlYD4714GWongaXSkM'
+BOT_TOKEN = 'Введите токен бота'
 bot = Bot(BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
-PAYMENTS_TOKEN = "381764678:TEST:69793"
+PAYMENTS_TOKEN = "Введите токен оплаты"
 
 price = types.LabeledPrice(label="Подписка на 30 дней", amount=1000 * 100)  # в копейках (руб)
 
