@@ -1,6 +1,6 @@
 from aiogram import types
 
-# Клавиатура
+# Создание клавиатуры с кнопками.
 kb = [[types.KeyboardButton(text='🔐 Зашифровать сообщение'),
        types.KeyboardButton(text='🔓 Расшифровать сообщение')],
       [types.KeyboardButton(text='💰 Подписка'),
@@ -9,6 +9,8 @@ kb = [[types.KeyboardButton(text='🔐 Зашифровать сообщение
        types.KeyboardButton(text='💻 Кодовая семантика')],
       [types.KeyboardButton(text='🪪 Профиль')]
       ]
+
+# Создание клавиатуры с установленными параметрами.
 keyboard = types.ReplyKeyboardMarkup(keyboard=kb,
                                      resize_keyboard=True,
                                      input_field_placeholder="Напишите сообщение")
